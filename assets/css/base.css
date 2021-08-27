@@ -1,0 +1,14 @@
+@font-face {
+	font-family: 'Gilroy-Bold';
+	src: url('../fonts/gilroy-bold.ttf');
+}
+
+@font-face {
+	font-family: 'Gilroy-Medium';
+	src: url('../fonts/gilroy-medium.ttf');
+}
+
+@font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?55263542#fontello') format('svg');
+}

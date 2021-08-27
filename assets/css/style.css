@@ -1,0 +1,321 @@
+@import url('base.css');
+@import url('fontello.css');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Gilroy-Bold';
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 47px;
+}
+
+h2 {
+	font-size: 34px;
+	text-align: center;
+}
+
+p {
+	font-size: 18px;
+	line-height: 22px;
+}
+
+#wrapper {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.nav_menu {
+	position: relative;
+	max-width: 100%;
+	min-height: 119px;
+	/*content-visibility: auto;*/
+	z-index: 1000;
+}
+
+.drop_down_top_menu {
+	justify-content: space-around;
+	margin-top: 33px;
+	display: flex;
+	list-style-type: none;
+}
+
+.drop_down_top_menu  a {
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.drop_down_top_menu  a:not(.active_menu_item) {
+	color: #828282;
+}
+
+.active_menu_item {
+	color: #000;
+}
+
+.menu_activation_btn {
+	margin-top: 37px;
+	float: right;
+	height: 1px;
+	display: none;
+	font-family: 'fontello';
+	font-size: 20px;
+	border: 0;
+	text-decoration: none;
+	background-color: #fff;
+}
+
+.active {
+	display: flex;
+}
+
+.menu_activation_btn::before {
+	content: '\f0c9';
+}
+
+.cancel::before {
+	color: #828282;
+	content: '\e802';
+	font-size: 30px;
+}
+
+.border_drop_down_top_menu {
+	position: relative;
+	content: '';
+	width: 100%;
+	height: 2px;
+	top: 51px;
+	background-color: #000;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.change_lang {
+	position: absolute;
+	right: 0;
+	top: 150px;
+	display: flex;
+	transform: rotate(-90deg);
+}
+
+.change_lang {
+	text-decoration: none;
+}
+
+.change_lang a {
+	font-size: 16px;
+}
+
+.change_lang a:not(.noactive) {
+	color: #000;
+}
+
+.noactive {
+	pointer-events: none;
+	color: #828282;
+}
+
+.hide_menu_2 {
+	justify-content: flex-end;
+}
+
+.show_menu {
+	justify-content: space-between;
+}
+
+.Home {
+	display: block;
+	position: relative;
+	/*max-width: 90%;*/
+	padding-bottom: 104px;
+}
+
+.data_block {
+	display: flex;
+	align-items: end;
+	vertical-align: bottom;
+	justify-content: space-between;
+	max-width: 65%;
+}
+
+
+.data_block p {
+	margin-top: 60px;
+	width: 155px;	
+}
+
+.Home img {
+	margin-top: 30px;
+	max-width: 100%;
+	width: auto;
+	min-width: 200px;
+}
+
+.desktop_version_of_my_face {
+	display: block;
+}
+
+.mobile_version_of_my_face {
+	display: none;
+}
+
+.noactive_block {
+	display: none;
+}
+
+.About_Me {
+	padding-top: 120px;
+	padding-bottom: 107px;
+	text-align: center;
+	background-color: #f6f6f6;
+}
+
+.About_Me h2 {
+	margin-bottom: 17px;
+}
+
+.About_Me p {
+	color: #707070;
+	font-family: 'Gilroy-Medium';
+}
+
+.skills {
+	text-align: center;
+	padding-bottom: 111px;
+}
+
+.skills h2 {
+	margin-top: 91px;
+}
+
+.skills p {
+	font-family: 'Gilroy-Medium';
+}
+
+.skills > p {
+	margin-top: 70px;
+}
+
+.skills_block {
+	display: flex;
+	justify-content: space-between;
+}
+
+.skills_block > div {
+	margin-top: 83px;
+}
+
+.skills_block p {
+	margin-top: 25px;
+	color: #828282;
+}
+
+.btn_star {
+	display: inline-block;
+	font-family: 'fontello';
+	border: 0;
+	text-decoration: none;
+	background-color: #fff;
+	color: #E5E5E5;
+}
+
+.btn_star:not(.figma_skills_block > .assessment > .btn_star) {
+	margin-top: 41px;
+}
+
+.figma_skills_block > .assessment > .btn_star {
+	margin-top: 59px;
+}
+
+.btn_star:hover {
+	cursor: pointer;
+	color: #6FA0A0;
+}
+
+.btn_star:before {
+	display: block;
+	font-size: 26px;
+	content: '\e801';
+}
+
+.btn_active_star {
+	color: #000;
+}
+
+@media screen and (max-width: 1280px) {
+	.data_block {
+		flex-direction: column;
+	}
+
+	.data_block p {
+		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#wrapper {
+		margin-left: 14px;
+		margin-right: 14px;
+	}
+
+	.nav_menu {
+		display: flex;
+		min-height: 0;
+	}
+
+	.drop_down_top_menu {
+		flex-direction: column;
+		text-align: left;
+		height: 406px;
+	}
+
+	.hide_menu {
+		display: none;
+	}
+
+	.drop_down_top_menu  a {
+		font-size: 20px;
+		line-height: 33px;	
+	}
+
+	.border_drop_down_top_menu {
+		display: none;
+	}
+
+	.menu_activation_btn {
+		display: flex;
+	}
+
+	.change_lang {
+		font-size: 20px;
+		/*margin-top: 217px;*/
+		margin-top: 400px;
+		transform: rotate(90deg);
+	}
+
+	.hide_change_lang {
+		display: none
+	}
+
+	.skills_block {
+		justify-content: center;
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.mobile_version_of_my_face {
+		display: block;
+	}
+
+	.desktop_version_of_my_face {
+		display: none;
+	}
+}
+
+git config --global user.email "helworldd@yandex.ru"
