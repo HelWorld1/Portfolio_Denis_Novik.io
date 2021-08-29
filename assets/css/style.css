@@ -169,6 +169,7 @@ p {
 }
 
 .About_Me {
+	content-visibility: auto;
 	padding-top: 120px;
 	padding-bottom: 107px;
 	text-align: center;
@@ -185,6 +186,7 @@ p {
 }
 
 .skills {
+	content-visibility: auto;
 	text-align: center;
 	padding-bottom: 111px;
 }
