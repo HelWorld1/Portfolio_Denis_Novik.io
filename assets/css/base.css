@@ -13,4 +13,5 @@
 @font-face {
     font-family: 'fontello';
     src: url('../font/fontello.svg?55263542#fontello') format('svg');
+    font-display: swap;
 }
