@@ -700,8 +700,8 @@ $(document).ready(function(){
     });
     $(window).on('scroll', function() {
         if ($(this).scrollTop() > 100) {
-            if ($('.top_arrow_btn').is(':hidden')) {
-                $('.top_arrow_btn').css({opacity : 1}).fadeIn('slow');
+            if (!$('.top_arrow_btn').hasClass('active_top_arrow_btn')) {
+                $('.top_arrow_btn').toggleClass('active_top_arrow_btn').fadeIn('slow');
             }
         } 
         else { 
