@@ -16,7 +16,8 @@ $(document).ready(function(){
             }
         } 
         else { 
-            $('.top_arrow_btn').stop(true, false).fadeOut('fast'); 
+            $('.top_arrow_btn').stop(true, false).fadeOut('fast');
+            $('.top_arrow_btn').toggleClass('active_top_arrow_btn').fadeIn('fast'); 
         }
     });
     $('.top_arrow_btn').on('click', function() {
