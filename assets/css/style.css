@@ -256,7 +256,8 @@ p {
     bottom: 30px;
     right: 30px;
     cursor: pointer;
-    display: none;
+    display: block;
+    opacity: 0;
     position: fixed;
     z-index: 999;
     background-color: #fff;
