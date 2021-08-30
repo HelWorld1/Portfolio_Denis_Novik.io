@@ -267,6 +267,7 @@ p {
 }
 
 .top_arrow_btn:before {
+	color: #000;
 	content: '\e803';
 	font-family: 'fontello';
 }
