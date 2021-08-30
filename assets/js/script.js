@@ -702,7 +702,12 @@ $(document).ready(function(){
 
 $(window).on('scroll', function(){
     if ($(this).scrollTop() > 300){
-        if($())
+        if(!$('.top_arrow_btn').hasClass('active_top_arrow_btn')){
+            $('top_arrow_btn').toggleClass('active_top_arrow_btn').fadeIn('slow');
+        }
+        else {
+            $('top_arrow_btn').stop(true, false).fadeOut('fast');
+        }
     }
 })
 
