@@ -249,6 +249,31 @@ p {
 	color: #000;
 }
 
+.top_arrow_btn {
+	height: 60px;
+    width: 60px;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 999;
+    background-color: #fff;
+    padding: 5px;
+    bottom: 1px solid #000;
+    border-radius: 100px;
+    box-shadow: none;
+}
+
+.top_arrow_btn:before {
+	content: '\e803';
+	font-family: 'fontello';
+}
+
+.active_top_arrow_btn {
+	display: block;
+}
+
 @media screen and (max-width: 1280px) {
 	.data_block {
 		flex-direction: column;
