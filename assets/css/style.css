@@ -260,7 +260,7 @@ p {
     position: fixed;
     z-index: 999;
     background-color: #fff;
-    padding: 5px;
+   /* padding: 5px;*/
     border: 1px solid #000;
     border-radius: 100px;
     box-shadow: none;
