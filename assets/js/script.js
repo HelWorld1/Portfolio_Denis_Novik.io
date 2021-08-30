@@ -699,9 +699,9 @@ $(document).ready(function(){
         }
     });
     $(window).on('scroll', function() {
+        alert('Проверка');
         if ($(this).scrollTop() > 100) {
             if (!$('.top_arrow_btn').hasClass('active_top_arrow_btn')) {
-                alert('Проверка');
                 $('.top_arrow_btn').toggleClass('active_top_arrow_btn').fadeIn('slow');
             }
         } 
