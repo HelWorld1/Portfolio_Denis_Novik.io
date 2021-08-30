@@ -698,18 +698,28 @@ $(document).ready(function(){
             }
         }
     });
-    $(window).on('scroll', function() {
-        alert('Проверка');
+    // $(document).scroll(function() {
+    //     if ($(this).scrollTop() > 100) {
+    //         if (!$('.top_arrow_btn').hasClass('active_top_arrow_btn')) {
+    //             $('.top_arrow_btn').toggleClass('active_top_arrow_btn').fadeIn('slow');
+    //         }
+    //     } 
+    //     else { 
+    //         $('.top_arrow_btn').stop(true, false).fadeOut('fast');
+    //     }
+    // });
+    // $('.top_arrow_btn').on('click', function() {
+    //     $('html, body').stop().animate({scrollTop : 0}, 300);
+    // });
+    $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
-            if (!$('.top_arrow_btn').hasClass('active_top_arrow_btn')) {
-                $('.top_arrow_btn').toggleClass('active_top_arrow_btn').fadeIn('slow');
-            }
-        } 
-        else { 
-            $('.top_arrow_btn').stop(true, false).fadeOut('fast');
+            $('.top_arrow_btn').fadeIn();
+        } else {
+            $('.top_arrow_btn').fadeOut();
         }
     });
-    $('.top_arrow_btn').on('click', function() {
-        $('html, body').stop().animate({scrollTop : 0}, 300);
+    $('.top_arrow_btn').click(function () {
+        $("html, body").animate({scrollTop: 0}, 600);
+        return false;
     });
 });
