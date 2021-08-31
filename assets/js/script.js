@@ -1,7 +1,6 @@
 let active_menu_item = 'nav a';
 
 $(document).ready(function(){
-    alert('Привет');
     $('.menu_activation_btn').click(function(){
         $('ul').toggleClass('hide_menu');
         $('.menu_activation_btn').toggleClass('cancel');
