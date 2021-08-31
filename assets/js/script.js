@@ -720,6 +720,8 @@ $(document).ready(function(){
     });
     $('.top_arrow_btn').click(function () {
         $("html, body").animate({scrollTop: 0}, 600);
+        $(active_menu_item).removeClass('active_menu_item');
+        $('.home').addClass('active_menu_item');
         return false;
     });
 });
