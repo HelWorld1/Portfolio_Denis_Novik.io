@@ -1,6 +1,8 @@
 @import url('base.css');
 @import url('fontello.css');
 
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -52,7 +54,7 @@ p {
 }
 
 .drop_down_top_menu  a:not(.active_menu_item) {
-	color: #828282;
+	color: var(--secondary-color);
 }
 
 .active_menu_item {
@@ -68,7 +70,7 @@ p {
 	font-size: 20px;
 	border: 0;
 	text-decoration: none;
-	background-color: #fff;
+	background-color: var(--background-firstly-color);
 }
 
 .active {
@@ -80,7 +82,7 @@ p {
 }
 
 .cancel::before {
-	color: #828282;
+	color: var(--secondary-color);
 	content: '\e802';
 	font-size: 30px;
 }
@@ -118,7 +120,7 @@ p {
 
 .noactive {
 	pointer-events: none;
-	color: #828282;
+	color: var(--secondary-color);
 }
 
 .hide_menu_2 {
@@ -174,7 +176,7 @@ p {
 	padding-top: 120px;
 	padding-bottom: 107px;
 	text-align: center;
-	background-color: #f6f6f6;
+	background-color: var(--background-secondary-color);
 }
 
 .About_Me h2 {
@@ -215,7 +217,7 @@ p {
 
 .skills_block p {
 	margin-top: 25px;
-	color: #828282;
+	color: var(--secondary-color);
 }
 
 .btn_star {
@@ -223,7 +225,7 @@ p {
 	font-family: 'fontello';
 	border: 0;
 	text-decoration: none;
-	background-color: #fff;
+	background-color: var(--background-firstly-color);
 	color: #E5E5E5;
 }
 
@@ -259,12 +261,12 @@ p {
     display: none;
     position: fixed;
     z-index: 999;
-    background-color: #fff;
+    background-color: var(--background-firstly-color);
    /* padding: 5px;*/
     border: 1px solid #000;
     border-radius: 100px;
     box-shadow: none;
-    padding: 20px 20px 20px 20px;
+    padding: 18px 20px;
     text-align: center;
 }
 
@@ -276,6 +278,31 @@ p {
 
 .active_top_arrow_btn {
 	display: block;
+}
+
+.portfolio {
+	text-align: center;
+	background-color: var(--background-secondary-color);
+}
+
+.portfolio div {
+	margin-bottom: 100px;
+}
+
+.portfolio h2 {
+	padding-top: 112px;
+	margin-bottom: 47px;
+}
+
+.portfolio img {
+	max-width: 100%;
+	min-width: 10%;
+	margin-bottom: 44px;
+}
+
+.portfolio a {
+	color: #000;
+	text-decoration: underline;
 }
 
 @media screen and (max-width: 1280px) {

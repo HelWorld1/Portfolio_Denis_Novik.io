@@ -9,27 +9,31 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<meta name="robots" content="noindex,follow">
 	<meta http-equiv="cache-control" content="no-cache">
-	<!-- <link rel="stylesheet" href="assets/css/style.css"> -->
-	<link rel="stylesheet" href="https://helworld1.github.io/firstly_web_sites.io/assets/css/style.css">
+	<link rel="preconnect" href="https://site.ru">
+  	<link rel="dns-prefetch" href="https://site.ru">
+  	<link rel="preload" href="assets/css/base.css" as="style" onload="this.rel='stylesheet'">
+  	<!-- <link rel="preload" href="assets/css/style.css" as="style" onload="this.rel='stylesheet'"> -->
+  	<link rel="stylesheet" href="assets/css/style.css">
+  	<link rel="preload" href="assets/css/fontello.css" as="style" onload="this.rel='stylesheet'">
 </head>
 <body>
 	<div id="wrapper">
 		<nav class="nav_menu hide_menu_2">
 			<ul class="drop_down_top_menu hide_menu">
-				<li><a href='#Home' class='active_menu_item'>Home</a></li>
-				<li><a href='#'>About me</a></li>
-				<li><a href='#'>Skills</a></li>
-				<li><a href='#'>Portfolio</a></li>
-				<li><a href='#'>Contacts</a></li>
+				<li><a href='#Home' class='active_menu_item home'>Home</a></li>
+				<li><a href='#About_Me'>About Me</a></li>
+				<li><a href='#Skills'>Skills</a></li>
+				<li><a href='#Portfolio'>Portfolio</a></li>
+				<li><a href='#Contacts'>Contacts</a></li>
 			</ul>
 			<button class="menu_activation_btn"></button>
 			<div class="border_drop_down_top_menu"></div>
 			<div class='change_lang hide_change_lang'>
-				<a href="ru.html">RU|</a><a href="" class="noactive">ENG</a>
+				<a href="ru.html">RU</a><a href="" class="noactive">|ENG</a>
 			</div>
 		</nav>
 		<main>
-			<div class="Home" name="Home">
+			<div class="Home" id="Home">
 				<div class="data_block">
 					<h1>Denis<br>Novik</h1>
 					<p>UX|UI designer 24 years old, Minsk</p>
@@ -37,15 +41,15 @@
 				<img src="assets/img/desktop_version_of_my_face.jpg" alt="" class="desktop_version_of_my_face">
 				<img src="assets/img/mobile_version_of_my_face.jpg" alt="" class="mobile_version_of_my_face">
 			</div>
-			<div class="About_Me">
+			<div class="About_Me" id="About_Me">
 				<h2>About Me</h2>
-				<p>Hi, I'm Denis – UX/UI designer from Minsk.<br> I'm interested in design and everything connected with it.</p><br>
-				<p>I'm studying at courses "Web and mobile design<br> interfaces" in IT-Academy.</p><br>
+				<p>Hello, I'm Denis – UX/UI designer from Minsk.<br> I'm interested in design and everything connected with it.</p><br>
+				<p>I'm studying at courses 'Web and mobile design<br> interfaces' in IT-Academy.</p><br>
 				<p>Ready to implement excellent projects<br> with wonderful people.</p>
 			</div>
-			<div class="skills">
+			<div class="skills" id="Skills">
 				<h2>Skills</h2>
-				<p>I work in such programs as:</p>
+				<p>I work in such programm as:</p>
 				<div class="skills_block">
 					<div class="photoshop_skills_block">
 						<img src="assets/img/Photoshop_icon.jpg" alt="">
@@ -93,8 +97,24 @@
 					</div>
 				</div>
 			</div>
+			<div class="portfolio" id="Portfolio">
+				<h2>Portfolio</h2>
+				<div class="online_fashion_store">
+					<img src="assets/img/Online_fashion_store.jpg" alt="">
+					<a href="#" class="homepage" target="_blank">Online fashion store - Homepage</a>
+				</div>
+				<div class="online_fashion_store">
+					<img src="assets/img/Reebok_store.jpg" alt="">
+					<a href="#" class="homepage" target="_blank">Reebok Store - Concept</a>
+				</div>
+				<div class="online_fashion_store">
+					<img src="assets/img/Braun_langing_page.jpg" alt="">
+					<a href="#" class="homepage" target="_blank">Braun Landing Page - Concept</a>
+				</div>
+			</div>
 		</main>
 	</div>
+	<a href="#Home" class="top_arrow_btn"></a>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="assets/js/script.js"></script>
 </body>

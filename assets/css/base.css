@@ -15,3 +15,9 @@
     src: url('../font/fontello.svg?55263542#fontello') format('svg');
     font-display: swap;
 }
+
+:root {
+	--secondary-color: #828282;
+	--background-firstly-color: #fff;
+	--background-secondary-color: #f6f6f6;
+}
