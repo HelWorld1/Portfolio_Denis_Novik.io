@@ -286,7 +286,7 @@ p {
 }
 
 .portfolio div {
-	margin-bottom: 100px;
+	padding-bottom: 100px;
 }
 
 .portfolio h2 {
@@ -303,6 +303,75 @@ p {
 .portfolio a {
 	color: #000;
 	text-decoration: underline;
+}
+
+.contacts {
+	text-align: center;
+}
+
+.contacts h2 {
+	margin-top: 100px;
+}
+
+.contacts p {
+	margin-top: 20px;
+	font-family: 'Gilroy-Medium';
+	color: #000;
+}
+
+.btn_message {
+	margin-top: 30px;
+	padding: 13px 30px;
+	border: 1px solid #000;
+	border-radius: 30px;
+	background-color: #000;
+	color: #fff;
+	cursor: pointer;
+}
+
+.social_network {
+	margin-top: 86px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.social_network a {
+	text-decoration: none;
+	color: #000;
+	font-family: 'fontello';
+	font-size: 40px;
+}
+
+.social_network a:not(.social_network a:last-child) {
+	margin-right: 51px;
+}
+
+.social_network a:nth-child(1):before {
+	content: '\e800';
+}
+
+.social_network a:nth-child(2):before {
+	content: '\f16d';
+}
+
+.social_network a:nth-child(3):before {
+	content: '\f1b4';
+}
+
+.social_network a:nth-child(4):before {
+	content: '\f050';
+}
+
+footer {
+	text-align: center;
+	margin-top: 45px;
+	margin-bottom: 123px;
+}
+
+footer p {
+	font-size: 14px;
+	color: var(--secondary-color);
 }
 
 @media screen and (max-width: 1280px) {
@@ -373,6 +442,16 @@ p {
 
 	.desktop_version_of_my_face {
 		display: none;
+	}
+
+	.top_arrow_btn {
+		padding: 14px 16px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.social_network a {
+		font-size: 35px;
 	}
 }
 
