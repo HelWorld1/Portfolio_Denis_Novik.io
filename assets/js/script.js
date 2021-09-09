@@ -1,6 +1,6 @@
 let active_menu_item = 'nav a';
 
-$(document).ready(function(){
+$(document).ready(async function(){
     $('.menu_activation_btn').click(function(){
         $('ul').toggleClass('hide_menu');
         $('.menu_activation_btn').toggleClass('cancel');
