@@ -374,6 +374,10 @@ footer p {
 	color: var(--secondary-color);
 }
 
+.copyright {
+	margin-top: 20px;
+}
+
 @media screen and (max-width: 1280px) {
 	.data_block {
 		flex-direction: column;

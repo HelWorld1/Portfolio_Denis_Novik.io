@@ -9,6 +9,14 @@ $(document).ready(async function(){
         $('.nav_menu').toggleClass('show_menu');
         $('.Home').toggleClass('noactive_block');
     })
+    $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+
+        let target = $(this.hash);
+        $('html, body').stop().animate({
+            'scrollTop': target.offset().top
+        }, 1000);
+    });
 
     $(active_menu_item).on('click', function(){
         $(active_menu_item).removeClass('active_menu_item');
@@ -27,7 +35,7 @@ $(document).ready(async function(){
         if($(this).hasClass("btn_active_star")) {
             if(next_child == nth_child5) {
                 if($('.photoshop_skills_block button:nth-child(5)').hasClass("btn_active_star")){
-                    alert('Братан, если хочешь убрать эту звёздочку, нажми звёздочки после неё.');
+                    alert('Пошёл нафиг');
                 }
                 else {
                     if(index = nth_child4) {
@@ -43,7 +51,7 @@ $(document).ready(async function(){
             else {
                 if(next_child == nth_child4) {
                     if($('.photoshop_skills_block .btn_active_star:nth-child(4)').hasClass("btn_active_star")){
-                        alert('Братан, если хочешь убрать эту звёздочку, нажми звёздочки после неё.');
+                        alert('Пошёл нафиг 1');
                     }
                     else {
                        $('.photoshop_skills_block button:nth-child(3)').removeClass('btn_active_star'); 
@@ -52,7 +60,7 @@ $(document).ready(async function(){
                 else {
                     if(next_child == nth_child3) {
                         if($('.photoshop_skills_block .btn_active_star:nth-child(3)').hasClass("btn_active_star")){
-                            alert('Братан, если хочешь убрать эту звёздочку, нажми звёздочки после неё.');
+                            alert('Пошёл нафиг 1');
                         }
                         else {
                             $('.photoshop_skills_block button:nth-child(2)').removeClass('btn_active_star');
@@ -61,7 +69,7 @@ $(document).ready(async function(){
                     else {
                         if(next_child == nth_child2) {
                             if($('.photoshop_skills_block .btn_active_star:nth-child(2)').hasClass("btn_active_star")){
-                                alert('Братан, если хочешь убрать эту звёздочку, нажми звёздочки после неё.');
+                                alert('Пошёл нафиг 1');
                             }
                             else {
                                 $('.photoshop_skills_block button:nth-child(1)').removeClass('btn_active_star');
@@ -82,7 +90,7 @@ $(document).ready(async function(){
                         $('.photoshop_skills_block button:nth-child(5)').addClass('btn_active_star');
                     }
                     else {
-                        alert('Братан, если хочешь поставить эту звёздочку, нажми звёздочки перед ней.');
+                        alert('Пошёл нафиг 1');
                     }
                 }
 
@@ -92,7 +100,7 @@ $(document).ready(async function(){
                             $('.photoshop_skills_block button:nth-child(4)').addClass('btn_active_star'); 
                         }
                         else {
-                            alert('Братан, если хочешь поставить эту звёздочку, нажми звёздочки перед ней.');
+                            alert('Пошёл нафиг 2');
                         }
                     }
                     else {
@@ -101,7 +109,7 @@ $(document).ready(async function(){
                                 $('.photoshop_skills_block button:nth-child(3)').addClass('btn_active_star');
                             }
                             else {
-                                alert('Братан, если хочешь поставить эту звёздочку, нажми звёздочки перед ней.');
+                                alert('Пошёл нафиг 3');
                             }
                         }
                         else {
@@ -110,7 +118,7 @@ $(document).ready(async function(){
                                     $('.photoshop_skills_block button:nth-child(2)').addClass('btn_active_star');
                                 }
                                 else {
-                                    alert('Братан, если хочешь поставить эту звёздочку, нажми звёздочки перед ней.');
+                                    alert('Пошёл нафиг 4');
                                 }
                             }
                             else {
@@ -119,7 +127,7 @@ $(document).ready(async function(){
                                 }
 
                                 else {
-                                    alert('Братан, если хочешь поставить эту звёздочку, нажми звёздочки перед ней.');
+                                    alert('Пошёл нафиг 5');
                                 }
                             }
                         }
@@ -221,7 +229,7 @@ $(document).ready(async function(){
                         else {
                             if(previous_child == nth_child1) {
                                 if($('.illustrator_skills_block .btn_active_star:nth-child(1)').hasClass("btn_active_star")){
-                                    $('..illustrator_skills_block button:nth-child(2)').addClass('btn_active_star');
+                                    $('.illustrator_skills_block button:nth-child(2)').addClass('btn_active_star');
                                 }
                                 else {
                                     alert('Пошёл нафиг 4');
@@ -356,61 +364,61 @@ $(document).ready(async function(){
             }
         }
     });
-    $(document).on('click', '.photoshop_skills_block .btn_star', function(){
+    $(document).on('click', '.figma_skills_block .btn_star', function(){
         let index = $(this).index();
         let next_child = index + 1;
         let previous_child = index - 1;
-        let nth_child1 = $('.photoshop_skills_block button:nth-child(1)').index();
-        let nth_child2 = $('.photoshop_skills_block button:nth-child(2)').index();
-        let nth_child3 = $('.photoshop_skills_block button:nth-child(3)').index();
-        let nth_child4 = $('.photoshop_skills_block button:nth-child(4)').index();
-        let nth_child5 = $('.photoshop_skills_block button:nth-child(5)').index();
+        let nth_child1 = $('.figma_skills_block button:nth-child(1)').index();
+        let nth_child2 = $('.figma_skills_block button:nth-child(2)').index();
+        let nth_child3 = $('.figma_skills_block button:nth-child(3)').index();
+        let nth_child4 = $('.figma_skills_block button:nth-child(4)').index();
+        let nth_child5 = $('.figma_skills_block button:nth-child(5)').index();
         // alert(next_child);
         if($(this).hasClass("btn_active_star")) {
             if(next_child == nth_child5) {
-                if($('.photoshop_skills_block button:nth-child(5)').hasClass("btn_active_star")){
+                if($('.figma_skills_block button:nth-child(5)').hasClass("btn_active_star")){
                     alert('Пошёл нафиг');
                 }
                 else {
                     if(index = nth_child4) {
-                        $('.photoshop_skills_block button:nth-child(4)').removeClass('btn_active_star');
+                        $('.figma_skills_block button:nth-child(4)').removeClass('btn_active_star');
                     }
 
                     else {
-                        $('.photoshop_skills_block button:nth-child(5)').removeClass('btn_active_star');
+                        $('.figma_skills_block button:nth-child(5)').removeClass('btn_active_star');
                     }
                 }
             }
 
             else {
                 if(next_child == nth_child4) {
-                    if($('.photoshop_skills_block .btn_active_star:nth-child(4)').hasClass("btn_active_star")){
+                    if($('.figma_skills_block .btn_active_star:nth-child(4)').hasClass("btn_active_star")){
                         alert('Пошёл нафиг 1');
                     }
                     else {
-                       $('.photoshop_skills_block button:nth-child(3)').removeClass('btn_active_star'); 
+                       $('.figma_skills_block button:nth-child(3)').removeClass('btn_active_star'); 
                     }
                 }
                 else {
                     if(next_child == nth_child3) {
-                        if($('.photoshop_skills_block .btn_active_star:nth-child(3)').hasClass("btn_active_star")){
+                        if($('.figma_skills_block .btn_active_star:nth-child(3)').hasClass("btn_active_star")){
                             alert('Пошёл нафиг 1');
                         }
                         else {
-                            $('.photoshop_skills_block button:nth-child(2)').removeClass('btn_active_star');
+                            $('.figma_skills_block button:nth-child(2)').removeClass('btn_active_star');
                         }
                     }
                     else {
                         if(next_child == nth_child2) {
-                            if($('.photoshop_skills_block .btn_active_star:nth-child(2)').hasClass("btn_active_star")){
+                            if($('.figma_skills_block .btn_active_star:nth-child(2)').hasClass("btn_active_star")){
                                 alert('Пошёл нафиг 1');
                             }
                             else {
-                                $('.photoshop_skills_block button:nth-child(1)').removeClass('btn_active_star');
+                                $('.figma_skills_block button:nth-child(1)').removeClass('btn_active_star');
                             }
                         }
                         else {
-                            $(this).removeClass('.photoshop_skills_block btn_active_star');
+                            $(this).removeClass('.figma_skills_block btn_active_star');
                         }
                     }
                 }
@@ -420,8 +428,8 @@ $(document).ready(async function(){
         else {
             if(!$(this).hasClass("btn_active_star")) {
                 if(previous_child == nth_child4) {
-                    if($('.photoshop_skills_block button:nth-child(4)').hasClass("btn_active_star")){
-                        $('.photoshop_skills_block button:nth-child(5)').addClass('btn_active_star');
+                    if($('.figma_skills_block button:nth-child(4)').hasClass("btn_active_star")){
+                        $('.figma_skills_block button:nth-child(5)').addClass('btn_active_star');
                     }
                     else {
                         alert('Пошёл нафиг 1');
@@ -430,8 +438,8 @@ $(document).ready(async function(){
 
                 else {
                     if(previous_child == nth_child3) {
-                        if($('.photoshop_skills_block .btn_active_star:nth-child(3)').hasClass("btn_active_star")){
-                            $('.photoshop_skills_block button:nth-child(4)').addClass('btn_active_star'); 
+                        if($('.figma_skills_block .btn_active_star:nth-child(3)').hasClass("btn_active_star")){
+                            $('.figma_skills_block button:nth-child(4)').addClass('btn_active_star'); 
                         }
                         else {
                             alert('Пошёл нафиг 2');
@@ -439,8 +447,8 @@ $(document).ready(async function(){
                     }
                     else {
                         if(previous_child == nth_child2) {
-                            if($('.photoshop_skills_block .btn_active_star:nth-child(2)').hasClass("btn_active_star")){
-                                $('.photoshop_skills_block button:nth-child(3)').addClass('btn_active_star');
+                            if($('.figma_skills_block .btn_active_star:nth-child(2)').hasClass("btn_active_star")){
+                                $('.figma_skills_block button:nth-child(3)').addClass('btn_active_star');
                             }
                             else {
                                 alert('Пошёл нафиг 3');
@@ -448,8 +456,8 @@ $(document).ready(async function(){
                         }
                         else {
                             if(previous_child == nth_child1) {
-                                if($('.photoshop_skills_block .btn_active_star:nth-child(1)').hasClass("btn_active_star")){
-                                    $('.photoshop_skills_block button:nth-child(2)').addClass('btn_active_star');
+                                if($('.figma_skills_block .btn_active_star:nth-child(1)').hasClass("btn_active_star")){
+                                    $('.figma_skills_block button:nth-child(2)').addClass('btn_active_star');
                                 }
                                 else {
                                     alert('Пошёл нафиг 4');
@@ -457,235 +465,7 @@ $(document).ready(async function(){
                             }
                             else {
                                 if(previous_child == -1){
-                                    $('.photoshop_skills_block button:nth-child(1)').addClass('btn_active_star');
-                                }
-
-                                else {
-                                    alert('Пошёл нафиг 5');
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    });
-    $(document).on('click', '.photoshop_skills_block .btn_star', function(){
-        let index = $(this).index();
-        let next_child = index + 1;
-        let previous_child = index - 1;
-        let nth_child1 = $('.photoshop_skills_block button:nth-child(1)').index();
-        let nth_child2 = $('.photoshop_skills_block button:nth-child(2)').index();
-        let nth_child3 = $('.photoshop_skills_block button:nth-child(3)').index();
-        let nth_child4 = $('.photoshop_skills_block button:nth-child(4)').index();
-        let nth_child5 = $('.photoshop_skills_block button:nth-child(5)').index();
-        // alert(next_child);
-        if($(this).hasClass("btn_active_star")) {
-            if(next_child == nth_child5) {
-                if($('.photoshop_skills_block button:nth-child(5)').hasClass("btn_active_star")){
-                    alert('Пошёл нафиг');
-                }
-                else {
-                    if(index = nth_child4) {
-                        $('.photoshop_skills_block button:nth-child(4)').removeClass('btn_active_star');
-                    }
-
-                    else {
-                        $('.photoshop_skills_block button:nth-child(5)').removeClass('btn_active_star');
-                    }
-                }
-            }
-
-            else {
-                if(next_child == nth_child4) {
-                    if($('.photoshop_skills_block .btn_active_star:nth-child(4)').hasClass("btn_active_star")){
-                        alert('Пошёл нафиг 1');
-                    }
-                    else {
-                       $('.photoshop_skills_block button:nth-child(3)').removeClass('btn_active_star'); 
-                    }
-                }
-                else {
-                    if(next_child == nth_child3) {
-                        if($('.photoshop_skills_block .btn_active_star:nth-child(3)').hasClass("btn_active_star")){
-                            alert('Пошёл нафиг 1');
-                        }
-                        else {
-                            $('.photoshop_skills_block button:nth-child(2)').removeClass('btn_active_star');
-                        }
-                    }
-                    else {
-                        if(next_child == nth_child2) {
-                            if($('.photoshop_skills_block .btn_active_star:nth-child(2)').hasClass("btn_active_star")){
-                                alert('Пошёл нафиг 1');
-                            }
-                            else {
-                                $('.photoshop_skills_block button:nth-child(1)').removeClass('btn_active_star');
-                            }
-                        }
-                        else {
-                            $(this).removeClass('.photoshop_skills_block btn_active_star');
-                        }
-                    }
-                }
-            }
-        }
-
-        else {
-            if(!$(this).hasClass("btn_active_star")) {
-                if(previous_child == nth_child4) {
-                    if($('.photoshop_skills_block button:nth-child(4)').hasClass("btn_active_star")){
-                        $('.photoshop_skills_block button:nth-child(5)').addClass('btn_active_star');
-                    }
-                    else {
-                        alert('Пошёл нафиг 1');
-                    }
-                }
-
-                else {
-                    if(previous_child == nth_child3) {
-                        if($('.photoshop_skills_block .btn_active_star:nth-child(3)').hasClass("btn_active_star")){
-                            $('.photoshop_skills_block button:nth-child(4)').addClass('btn_active_star'); 
-                        }
-                        else {
-                            alert('Пошёл нафиг 2');
-                        }
-                    }
-                    else {
-                        if(previous_child == nth_child2) {
-                            if($('.photoshop_skills_block .btn_active_star:nth-child(2)').hasClass("btn_active_star")){
-                                $('.photoshop_skills_block button:nth-child(3)').addClass('btn_active_star');
-                            }
-                            else {
-                                alert('Пошёл нафиг 3');
-                            }
-                        }
-                        else {
-                            if(previous_child == nth_child1) {
-                                if($('.photoshop_skills_block .btn_active_star:nth-child(1)').hasClass("btn_active_star")){
-                                    $('.photoshop_skills_block button:nth-child(2)').addClass('btn_active_star');
-                                }
-                                else {
-                                    alert('Пошёл нафиг 4');
-                                }
-                            }
-                            else {
-                                if(previous_child == -1){
-                                    $('.photoshop_skills_block button:nth-child(1)').addClass('btn_active_star');
-                                }
-
-                                else {
-                                    alert('Пошёл нафиг 5');
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    });
-    $(document).on('click', '.photoshop_skills_block .btn_star', function(){
-        let index = $(this).index();
-        let next_child = index + 1;
-        let previous_child = index - 1;
-        let nth_child1 = $('.photoshop_skills_block button:nth-child(1)').index();
-        let nth_child2 = $('.photoshop_skills_block button:nth-child(2)').index();
-        let nth_child3 = $('.photoshop_skills_block button:nth-child(3)').index();
-        let nth_child4 = $('.photoshop_skills_block button:nth-child(4)').index();
-        let nth_child5 = $('.photoshop_skills_block button:nth-child(5)').index();
-        // alert(next_child);
-        if($(this).hasClass("btn_active_star")) {
-            if(next_child == nth_child5) {
-                if($('.photoshop_skills_block button:nth-child(5)').hasClass("btn_active_star")){
-                    alert('Пошёл нафиг');
-                }
-                else {
-                    if(index = nth_child4) {
-                        $('.photoshop_skills_block button:nth-child(4)').removeClass('btn_active_star');
-                    }
-
-                    else {
-                        $('.photoshop_skills_block button:nth-child(5)').removeClass('btn_active_star');
-                    }
-                }
-            }
-
-            else {
-                if(next_child == nth_child4) {
-                    if($('.photoshop_skills_block .btn_active_star:nth-child(4)').hasClass("btn_active_star")){
-                        alert('Пошёл нафиг 1');
-                    }
-                    else {
-                       $('.photoshop_skills_block button:nth-child(3)').removeClass('btn_active_star'); 
-                    }
-                }
-                else {
-                    if(next_child == nth_child3) {
-                        if($('.photoshop_skills_block .btn_active_star:nth-child(3)').hasClass("btn_active_star")){
-                            alert('Пошёл нафиг 1');
-                        }
-                        else {
-                            $('.photoshop_skills_block button:nth-child(2)').removeClass('btn_active_star');
-                        }
-                    }
-                    else {
-                        if(next_child == nth_child2) {
-                            if($('.photoshop_skills_block .btn_active_star:nth-child(2)').hasClass("btn_active_star")){
-                                alert('Пошёл нафиг 1');
-                            }
-                            else {
-                                $('.photoshop_skills_block button:nth-child(1)').removeClass('btn_active_star');
-                            }
-                        }
-                        else {
-                            $(this).removeClass('.photoshop_skills_block btn_active_star');
-                        }
-                    }
-                }
-            }
-        }
-
-        else {
-            if(!$(this).hasClass("btn_active_star")) {
-                if(previous_child == nth_child4) {
-                    if($('.photoshop_skills_block button:nth-child(4)').hasClass("btn_active_star")){
-                        $('.photoshop_skills_block button:nth-child(5)').addClass('btn_active_star');
-                    }
-                    else {
-                        alert('Пошёл нафиг 1');
-                    }
-                }
-
-                else {
-                    if(previous_child == nth_child3) {
-                        if($('.photoshop_skills_block .btn_active_star:nth-child(3)').hasClass("btn_active_star")){
-                            $('.photoshop_skills_block button:nth-child(4)').addClass('btn_active_star'); 
-                        }
-                        else {
-                            alert('Пошёл нафиг 2');
-                        }
-                    }
-                    else {
-                        if(previous_child == nth_child2) {
-                            if($('.photoshop_skills_block .btn_active_star:nth-child(2)').hasClass("btn_active_star")){
-                                $('.photoshop_skills_block button:nth-child(3)').addClass('btn_active_star');
-                            }
-                            else {
-                                alert('Пошёл нафиг 3');
-                            }
-                        }
-                        else {
-                            if(previous_child == nth_child1) {
-                                if($('.photoshop_skills_block .btn_active_star:nth-child(1)').hasClass("btn_active_star")){
-                                    $('.photoshop_skills_block button:nth-child(2)').addClass('btn_active_star');
-                                }
-                                else {
-                                    alert('Пошёл нафиг 4');
-                                }
-                            }
-                            else {
-                                if(previous_child == -1){
-                                    $('.photoshop_skills_block button:nth-child(1)').addClass('btn_active_star');
+                                    $('.figma_skills_block button:nth-child(1)').addClass('btn_active_star');
                                 }
 
                                 else {
