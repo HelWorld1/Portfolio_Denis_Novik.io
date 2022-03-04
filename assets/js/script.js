@@ -35,7 +35,7 @@ $(document).ready(async function(){
         if($(this).hasClass("btn_active_star")) {
             if(next_child == nth_child5) {
                 if($('.photoshop_skills_block button:nth-child(5)').hasClass("btn_active_star")){
-                    alert('Пошёл нафиг');
+                    alert('Неее, брат, так дело не пойдет! Сначала нажми предыдущую звёздочку');
                 }
                 else {
                     if(index = nth_child4) {
@@ -51,7 +51,7 @@ $(document).ready(async function(){
             else {
                 if(next_child == nth_child4) {
                     if($('.photoshop_skills_block .btn_active_star:nth-child(4)').hasClass("btn_active_star")){
-                        alert('Пошёл нафиг 1');
+                        alert('Неее, брат, так дело не пойдет! Сначала нажми предыдущую звёздочку');
                     }
                     else {
                        $('.photoshop_skills_block button:nth-child(3)').removeClass('btn_active_star'); 
@@ -60,7 +60,7 @@ $(document).ready(async function(){
                 else {
                     if(next_child == nth_child3) {
                         if($('.photoshop_skills_block .btn_active_star:nth-child(3)').hasClass("btn_active_star")){
-                            alert('Пошёл нафиг 1');
+                            alert('Неее, брат, так дело не пойдет! Сначала нажми предыдущую звёздочку');
                         }
                         else {
                             $('.photoshop_skills_block button:nth-child(2)').removeClass('btn_active_star');
@@ -69,7 +69,7 @@ $(document).ready(async function(){
                     else {
                         if(next_child == nth_child2) {
                             if($('.photoshop_skills_block .btn_active_star:nth-child(2)').hasClass("btn_active_star")){
-                                alert('Пошёл нафиг 1');
+                                alert('Неее, брат, так дело не пойдет! Сначала нажми предыдущую звёздочку');
                             }
                             else {
                                 $('.photoshop_skills_block button:nth-child(1)').removeClass('btn_active_star');
@@ -90,7 +90,7 @@ $(document).ready(async function(){
                         $('.photoshop_skills_block button:nth-child(5)').addClass('btn_active_star');
                     }
                     else {
-                        alert('Пошёл нафиг 1');
+                        alert('Неее, брат, так дело не пойдет! Сначала нажми звёздочку перед этой');
                     }
                 }
 
@@ -100,7 +100,7 @@ $(document).ready(async function(){
                             $('.photoshop_skills_block button:nth-child(4)').addClass('btn_active_star'); 
                         }
                         else {
-                            alert('Пошёл нафиг 2');
+                            alert('Неее, брат, так дело не пойдет! Сначала нажми звёздочку перед этой');
                         }
                     }
                     else {
@@ -109,7 +109,7 @@ $(document).ready(async function(){
                                 $('.photoshop_skills_block button:nth-child(3)').addClass('btn_active_star');
                             }
                             else {
-                                alert('Пошёл нафиг 3');
+                                alert('Неее, брат, так дело не пойдет! Сначала нажми звёздочку перед этой');
                             }
                         }
                         else {
@@ -118,7 +118,7 @@ $(document).ready(async function(){
                                     $('.photoshop_skills_block button:nth-child(2)').addClass('btn_active_star');
                                 }
                                 else {
-                                    alert('Пошёл нафиг 4');
+                                    alert('Неее, брат, так дело не пойдет! Сначала нажми звёздочку перед этой');
                                 }
                             }
                             else {
@@ -127,7 +127,7 @@ $(document).ready(async function(){
                                 }
 
                                 else {
-                                    alert('Пошёл нафиг 5');
+                                    alert('Неее, брат, так дело не пойдет! Сначала нажми звёздочку перед этой');
                                 }
                             }
                         }
@@ -149,7 +149,7 @@ $(document).ready(async function(){
         if($(this).hasClass("btn_active_star")) {
             if(next_child == nth_child5) {
                 if($('.illustrator_skills_block button:nth-child(5)').hasClass("btn_active_star")){
-                    alert('Пошёл нафиг');
+                    alert('Неее, брат, так дело не пойдет! Сначала нажми предыдущую звёздочку');
                 }
                 else {
                     if(index = nth_child4) {
@@ -165,7 +165,7 @@ $(document).ready(async function(){
             else {
                 if(next_child == nth_child4) {
                     if($('.illustrator_skills_block .btn_active_star:nth-child(4)').hasClass("btn_active_star")){
-                        alert('Пошёл нафиг 1');
+                        alert('Неее, брат, так дело не пойдет! Сначала нажми предыдущую звёздочку');
                     }
                     else {
                        $('.illustrator_skills_block button:nth-child(3)').removeClass('btn_active_star'); 
@@ -174,7 +174,7 @@ $(document).ready(async function(){
                 else {
                     if(next_child == nth_child3) {
                         if($('.illustrator_skills_block .btn_active_star:nth-child(3)').hasClass("btn_active_star")){
-                            alert('Пошёл нафиг 1');
+                            alert('Неее, брат, так дело не пойдет! Сначала нажми предыдущую звёздочку');
                         }
                         else {
                             $('.illustrator_skills_block button:nth-child(2)').removeClass('btn_active_star');
@@ -204,7 +204,7 @@ $(document).ready(async function(){
                         $('.illustrator_skills_block button:nth-child(5)').addClass('btn_active_star');
                     }
                     else {
-                        alert('Пошёл нафиг 1');
+                        alert('Неее, брат, так дело не пойдет! Сначала нажми звёздочку перед этой');
                     }
                 }
 
@@ -214,7 +214,7 @@ $(document).ready(async function(){
                             $('.illustrator_skills_block button:nth-child(4)').addClass('btn_active_star'); 
                         }
                         else {
-                            alert('Пошёл нафиг 2');
+                            alert('Неее, брат, так дело не пойдет! Сначала нажми звёздочку перед этой');
                         }
                     }
                     else {
@@ -223,7 +223,7 @@ $(document).ready(async function(){
                                 $('.illustrator_skills_block button:nth-child(3)').addClass('btn_active_star');
                             }
                             else {
-                                alert('Пошёл нафиг 3');
+                                alert('Неее, брат, так дело не пойдет! Сначала нажми звёздочку перед этой');
                             }
                         }
                         else {
@@ -232,7 +232,7 @@ $(document).ready(async function(){
                                     $('.illustrator_skills_block button:nth-child(2)').addClass('btn_active_star');
                                 }
                                 else {
-                                    alert('Пошёл нафиг 4');
+                                    alert('Неее, брат, так дело не пойдет! Сначала нажми звёздочку перед этой');
                                 }
                             }
                             else {
@@ -241,7 +241,7 @@ $(document).ready(async function(){
                                 }
 
                                 else {
-                                    alert('Пошёл нафиг 5');
+                                    alert('Неее, брат, так дело не пойдет! Сначала нажми звёздочку перед этой');
                                 }
                             }
                         }
@@ -263,7 +263,7 @@ $(document).ready(async function(){
         if($(this).hasClass("btn_active_star")) {
             if(next_child == nth_child5) {
                 if($('.effects_skills_block button:nth-child(5)').hasClass("btn_active_star")){
-                    alert('Пошёл нафиг');
+                    alert('Неее, брат, так дело не пойдет! Сначала нажми предыдущую звёздочку');
                 }
                 else {
                     if(index = nth_child4) {
@@ -279,7 +279,7 @@ $(document).ready(async function(){
             else {
                 if(next_child == nth_child4) {
                     if($('.effects_skills_block .btn_active_star:nth-child(4)').hasClass("btn_active_star")){
-                        alert('Пошёл нафиг 1');
+                        alert('Неее, брат, так дело не пойдет! Сначала нажми предыдущую звёздочку');
                     }
                     else {
                        $('.effects_skills_block button:nth-child(3)').removeClass('btn_active_star'); 
@@ -288,7 +288,7 @@ $(document).ready(async function(){
                 else {
                     if(next_child == nth_child3) {
                         if($('.effects_skills_block .btn_active_star:nth-child(3)').hasClass("btn_active_star")){
-                            alert('Пошёл нафиг 1');
+                            alert('Неее, брат, так дело не пойдет! Сначала нажми предыдущую звёздочку');
                         }
                         else {
                             $('.effects_skills_block button:nth-child(2)').removeClass('btn_active_star');
@@ -297,7 +297,7 @@ $(document).ready(async function(){
                     else {
                         if(next_child == nth_child2) {
                             if($('.effects_skills_block .btn_active_star:nth-child(2)').hasClass("btn_active_star")){
-                                alert('Пошёл нафиг 1');
+                                alert('Неее, брат, так дело не пойдет! Сначала нажми предыдущую звёздочку');
                             }
                             else {
                                 $('.effects_skills_block button:nth-child(1)').removeClass('btn_active_star');
@@ -318,7 +318,7 @@ $(document).ready(async function(){
                         $('.effects_skills_block button:nth-child(5)').addClass('btn_active_star');
                     }
                     else {
-                        alert('Пошёл нафиг 1');
+                        alert('Неее, брат, так дело не пойдет! Сначала нажми звёздочку перед этой');
                     }
                 }
 
@@ -328,7 +328,7 @@ $(document).ready(async function(){
                             $('.effects_skills_block button:nth-child(4)').addClass('btn_active_star'); 
                         }
                         else {
-                            alert('Пошёл нафиг 2');
+                            alert('Неее, брат, так дело не пойдет! Сначала нажми звёздочку перед этой');
                         }
                     }
                     else {
@@ -337,7 +337,7 @@ $(document).ready(async function(){
                                 $('.effects_skills_block button:nth-child(3)').addClass('btn_active_star');
                             }
                             else {
-                                alert('Пошёл нафиг 3');
+                                alert('Неее, брат, так дело не пойдет! Сначала нажми звёздочку перед этой');
                             }
                         }
                         else {
@@ -346,7 +346,7 @@ $(document).ready(async function(){
                                     $('.effects_skills_block button:nth-child(2)').addClass('btn_active_star');
                                 }
                                 else {
-                                    alert('Пошёл нафиг 4');
+                                    alert('Неее, брат, так дело не пойдет! Сначала нажми звёздочку перед этой');
                                 }
                             }
                             else {
@@ -355,7 +355,7 @@ $(document).ready(async function(){
                                 }
 
                                 else {
-                                    alert('Пошёл нафиг 5');
+                                    alert('Неее, брат, так дело не пойдет! Сначала нажми звёздочку перед этой');
                                 }
                             }
                         }
@@ -377,7 +377,7 @@ $(document).ready(async function(){
         if($(this).hasClass("btn_active_star")) {
             if(next_child == nth_child5) {
                 if($('.figma_skills_block button:nth-child(5)').hasClass("btn_active_star")){
-                    alert('Пошёл нафиг');
+                    alert('Неее, брат, так дело не пойдет! Сначала нажми предыдущую звёздочку');
                 }
                 else {
                     if(index = nth_child4) {
@@ -393,7 +393,7 @@ $(document).ready(async function(){
             else {
                 if(next_child == nth_child4) {
                     if($('.figma_skills_block .btn_active_star:nth-child(4)').hasClass("btn_active_star")){
-                        alert('Пошёл нафиг 1');
+                        alert('Неее, брат, так дело не пойдет! Сначала нажми предыдущую звёздочку');
                     }
                     else {
                        $('.figma_skills_block button:nth-child(3)').removeClass('btn_active_star'); 
@@ -402,7 +402,7 @@ $(document).ready(async function(){
                 else {
                     if(next_child == nth_child3) {
                         if($('.figma_skills_block .btn_active_star:nth-child(3)').hasClass("btn_active_star")){
-                            alert('Пошёл нафиг 1');
+                            alert('Неее, брат, так дело не пойдет! Сначала нажми предыдущую звёздочку');
                         }
                         else {
                             $('.figma_skills_block button:nth-child(2)').removeClass('btn_active_star');
@@ -411,7 +411,7 @@ $(document).ready(async function(){
                     else {
                         if(next_child == nth_child2) {
                             if($('.figma_skills_block .btn_active_star:nth-child(2)').hasClass("btn_active_star")){
-                                alert('Пошёл нафиг 1');
+                                alert('Неее, брат, так дело не пойдет! Сначала нажми предыдущую звёздочку');
                             }
                             else {
                                 $('.figma_skills_block button:nth-child(1)').removeClass('btn_active_star');
@@ -432,7 +432,7 @@ $(document).ready(async function(){
                         $('.figma_skills_block button:nth-child(5)').addClass('btn_active_star');
                     }
                     else {
-                        alert('Пошёл нафиг 1');
+                        alert('Неее, брат, так дело не пойдет! Сначала нажми звёздочку перед этой');
                     }
                 }
 
@@ -442,7 +442,7 @@ $(document).ready(async function(){
                             $('.figma_skills_block button:nth-child(4)').addClass('btn_active_star'); 
                         }
                         else {
-                            alert('Пошёл нафиг 2');
+                            alert('Неее, брат, так дело не пойдет! Сначала нажми звёздочку перед этой');
                         }
                     }
                     else {
@@ -451,7 +451,7 @@ $(document).ready(async function(){
                                 $('.figma_skills_block button:nth-child(3)').addClass('btn_active_star');
                             }
                             else {
-                                alert('Пошёл нафиг 3');
+                                alert('Неее, брат, так дело не пойдет! Сначала нажми звёздочку перед этой');
                             }
                         }
                         else {
@@ -460,7 +460,7 @@ $(document).ready(async function(){
                                     $('.figma_skills_block button:nth-child(2)').addClass('btn_active_star');
                                 }
                                 else {
-                                    alert('Пошёл нафиг 4');
+                                    alert('Неее, брат, так дело не пойдет! Сначала нажми звёздочку перед этой');
                                 }
                             }
                             else {
@@ -469,7 +469,7 @@ $(document).ready(async function(){
                                 }
 
                                 else {
-                                    alert('Пошёл нафиг 5');
+                                    alert('Неее, брат, так дело не пойдет! Сначала нажми звёздочку перед этой');
                                 }
                             }
                         }
